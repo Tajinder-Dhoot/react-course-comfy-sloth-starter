@@ -28,6 +28,7 @@ const FeaturedProducts = () => {
         <div className="underline"></div>
       </div>
       <div className="section-center featured">
+        {/* slice is to display only 3 images */}
         {featured.slice(0, 3).map((product) => {
           return <Product key={product.id} {...product} />;
         })}
